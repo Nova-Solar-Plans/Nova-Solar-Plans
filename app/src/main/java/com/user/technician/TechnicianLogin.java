@@ -1,4 +1,4 @@
-package com.admin.technician;
+package com.user.technician;
 
 import androidx.appcompat.app.AppCompatActivity;
 
