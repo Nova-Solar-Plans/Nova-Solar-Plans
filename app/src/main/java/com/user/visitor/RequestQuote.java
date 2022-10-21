@@ -6,11 +6,12 @@ import android.os.Bundle;
 
 import com.user.main.R;
 
-public class VisitorLogin extends AppCompatActivity {
+public class RequestQuote extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_visitor_login);
+        setContentView(R.layout.activity_request_quote);
+
     }
 }
