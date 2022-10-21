@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Main">
         <activity
+            android:name="com.user.visitor.VisitorProductDetails"
+            android:exported="false" />
+        <activity
+            android:name="com.user.visitor.VisitorProducts"
+            android:exported="false" />
+        <activity
+            android:name="com.user.visitor.VisitorShop"
+            android:exported="false" />
+        <activity
             android:name="com.user.visitor.RequestQuote"
             android:exported="false" />
         <activity
