@@ -3,8 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/drawable/login_rounded_corner.xml" value="0.192" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/drawable/rounded_corner.xml" value="0.2135" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/drawable/top_title_corner.xml" value="0.192" />
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_user_navigation.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_technician_login.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_user_navigation.xml" value="0.2" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_visitor_login.xml" value="0.25" />
       </map>
     </option>
   </component>
