@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "411768838634",
+    "project_id": "nova-solar-plans",
+    "storage_bucket": "nova-solar-plans.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411768838634:android:8ea4565e2f756acef0fa93",
+        "android_client_info": {
+          "package_name": "com.user.main"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "411768838634-ihcf2rivhbg6oe0fpmj7blqqvj7uq2tn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC02ee7KbNOBUqwmwSiLJWGzMEy2MTFnNc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "411768838634-ihcf2rivhbg6oe0fpmj7blqqvj7uq2tn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411768838634:android:3838b17a48f40ffcf0fa93",
+        "android_client_info": {
+          "package_name": "com.user.technician"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "411768838634-ihcf2rivhbg6oe0fpmj7blqqvj7uq2tn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC02ee7KbNOBUqwmwSiLJWGzMEy2MTFnNc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "411768838634-ihcf2rivhbg6oe0fpmj7blqqvj7uq2tn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
