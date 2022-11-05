@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/top_bar_color"
+    android:orientation="vertical"
+    tools:context=".UserNavigation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="185dp"
+                    android:src="@drawable/nova_logo"
+                    android:background="@drawable/user_navigation"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center">
+
+
+
+                    <Button
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner"
+                        android:backgroundTint="@color/black"
+                        android:text="GUEST"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/rounded_corner"
+                        android:text="MEMBER"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/company_navigate_btn"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/rounded_corner"
+                        android:text="COMPANY"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/technician_navigate_btn"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/rounded_corner"
+                        android:text="TECHNICIAN"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

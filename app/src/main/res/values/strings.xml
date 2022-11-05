@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">main</string>
+    <string name="register"><u>Register</u></string>
+    <string name="login"><u>Login</u></string>
+    <string name="remain_tasks">Remaining Tasks</string>
+    <string name="finished_tasks">Finished Tasks</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="profile">Profile</string>
+    <string name="menu_drawer_open">Drawer Open</string>
+    <string name="menu_drawer_close">Drawer Close</string>
+    <string name="edit"><u>Edit</u></string>
+    <string name="rating"><u>Rating</u></string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="task_count">Task Count</string>
+    <string name="type"><b>Type</b></string>
+    <string name="description"><b>Description</b></string>
+    <string name="date"><b>Date</b></string>
+    <string name="task_details"><b>Task Details</b></string>
+    <string name="customer_details"><b>Customer Details : </b></string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="order_no">Order No : </string>
+    <string name="status"><b>Status</b></string>
+    <string name="feedback"><b>Feedback</b></string>
+    <string name="mark_as_finished">Mark as Finished</string>
+</resources>
