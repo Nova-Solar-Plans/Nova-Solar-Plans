@@ -27,6 +27,12 @@
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/drawer_header.xml" value="0.25" />
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/task_list.xml" value="0.25" />
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/menu/drawer_menu.xml" value="0.25" />
+        <entry key="..\:/Nova-Solar-Plans.git/app/src/main/res/layout/activity_dash_board.xml" value="0.25" />
+        <entry key="..\:/Nova-Solar-Plans.git/app/src/main/res/layout/activity_finished_task_details.xml" value="0.25" />
+        <entry key="..\:/Nova-Solar-Plans.git/app/src/main/res/layout/activity_remaining_task_details.xml" value="0.25" />
+        <entry key="..\:/Nova-Solar-Plans.git/app/src/main/res/layout/activity_technician_finished_tasks.xml" value="0.25" />
+        <entry key="..\:/Nova-Solar-Plans.git/app/src/main/res/layout/activity_technician_remain_tasks.xml" value="0.25" />
+        <entry key="..\:/Nova-Solar-Plans.git/app/src/main/res/layout/task_list.xml" value="0.25" />
       </map>
     </option>
   </component>

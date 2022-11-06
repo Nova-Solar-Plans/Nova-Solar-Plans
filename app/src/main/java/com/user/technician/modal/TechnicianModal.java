@@ -5,20 +5,26 @@ public class TechnicianModal {
     public String name;
     public String email;
     public String address;
+    public String nic;
     public String password;
     public String rating;
 
     public TechnicianModal(){}
 
-    public TechnicianModal(String name,String email,String address,String password,String rating){
+    public TechnicianModal(String name,String email,String address,String nic,String password,String rating){
 
         this.name = name;
         this.email = email;
         this.address = address;
         this.password = password;
         this.rating = rating;
+        this.nic = nic;
 
 
+    }
+
+    public String getNic() {
+        return nic;
     }
 
     public String getAddress() {

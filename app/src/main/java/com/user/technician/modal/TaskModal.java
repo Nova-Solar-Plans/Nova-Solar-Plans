@@ -4,21 +4,22 @@ import com.google.android.gms.tasks.Task;
 
 public class TaskModal {
 
+    String key;
     String type;
     String description;
     String customerName;
     String customerAddress;
-    String customerOrderNo;
+    int customerOrderNo;
     String date;
     String status;
-    String rating;
+    int rating;
     String ratingDescription;
     String technicianFeedback;
 
     public TaskModal(){}
 
-    public TaskModal(String type,String description,String customerName, String customerAddress, String customerOrderNo
-        ,String date,String status,String rating,String ratingDescription,String technicianFeedback){
+    public TaskModal(String type,String description,String customerName, String customerAddress, int customerOrderNo
+        ,String date,String status,int rating,String ratingDescription,String technicianFeedback){
 
         this.type = type;
         this.description = description;
@@ -32,7 +33,8 @@ public class TaskModal {
         this.technicianFeedback = technicianFeedback;
     }
 
-    public String getRating() {
+
+    public int getRating() {
         return rating;
     }
 
@@ -60,7 +62,7 @@ public class TaskModal {
         return customerName;
     }
 
-    public String getCustomerOrderNo() {
+    public int getCustomerOrderNo() {
         return customerOrderNo;
     }
 

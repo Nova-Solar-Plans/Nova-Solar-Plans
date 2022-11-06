@@ -7,13 +7,11 @@
     android:padding="5dp">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/task_01"
+        android:id="@+id/task_card"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="12dp"
         app:cardCornerRadius="12dp"
         android:layout_gravity="center"
         android:backgroundTint="@color/theme_color2"
@@ -40,7 +38,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/type"
+                    android:text="@string/card_type"
                     android:layout_marginLeft="10dp"
                     android:textSize="18sp"/>
 
@@ -48,8 +46,7 @@
                     android:id="@+id/task_type"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="54dp"
-                    android:text=" : Repair"
+                    android:text="Repair"
                     android:textSize="18sp"/>
 
             </LinearLayout>
@@ -62,7 +59,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/description"
+                    android:text="@string/card_description"
                     android:layout_marginLeft="10dp"
                     android:textSize="18sp"/>
 
@@ -70,7 +67,7 @@
                     android:id="@+id/task_description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=" : Solar panel not working properly"
+                    android:text="Solar panel not working properly"
                     android:textSize="18sp"/>
 
             </LinearLayout>
@@ -84,7 +81,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/date"
+                    android:text="@string/card_date"
                     android:layout_marginLeft="10dp"
                     android:textSize="18sp"/>
 
@@ -92,8 +89,7 @@
                     android:id="@+id/date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="54dp"
-                    android:text=" : 22/10/2022"
+                    android:text="22/10/2022"
                     android:textSize="18sp"/>
 
             </LinearLayout>

@@ -16,13 +16,13 @@ public class TechnicianDatabase {
 
     public  TechnicianDatabase(){
         FirebaseDatabase db = FirebaseDatabase.getInstance();
-        databaseReference = db.getReference(TechnicianModal.class.getSimpleName());
+        databaseReference = db.getReference("Technician");
         mAuth=FirebaseAuth.getInstance();
     }
 
     public Task<Void> addTechnician(TechnicianModal technicianModal){
 
-        return databaseReference.child("Technician").child(mAuth.getCurrentUser().getUid()).setValue(technicianModal);
+        return databaseReference.child(mAuth.getCurrentUser().getUid()).setValue(technicianModal);
     }
 
     public Task<AuthResult> technicianAuth(TechnicianModal technicianModal){
@@ -36,11 +36,11 @@ public class TechnicianDatabase {
     }
 
     public  Task<Void> technicianUpdate(String key, HashMap<String,Object> hashMap){
-        return databaseReference.child("Technician").child(key).updateChildren(hashMap);
+        return databaseReference.child(key).updateChildren(hashMap);
     }
 
     public Task<Void> technicianDelete(String key){
-        return databaseReference.child("Technician").child(key).removeValue();
+        return databaseReference.child(key).removeValue();
     }
 
 }

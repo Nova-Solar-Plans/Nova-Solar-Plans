@@ -17,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.firebase.ui.database.SnapshotParser;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.ChildEventListener;
@@ -37,12 +38,13 @@ public class TechnicianFinishedTasks extends DrawerBase{
 
     ActivityTechnicianFinishedTasksBinding activityTechnicianFinishedTasksBinding;
 
-    private ListView ListView;
     private TextView TaskCount;
     private ImageView FavStar;
     private RecyclerView recyclerView;
+
     FinishedTaskAdapter finishedTaskAdapter;
     public static ArrayList<TaskModal> taskModalArrayList = new ArrayList<>();
+
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
     private FirebaseAuth mAuth;
@@ -58,18 +60,16 @@ public class TechnicianFinishedTasks extends DrawerBase{
         TaskCount = findViewById(R.id.task_count);
         FavStar = findViewById(R.id.fav_star);
 
-        mAuth=FirebaseAuth.getInstance();
-        FirebaseUser currentUser = mAuth.getCurrentUser();
 
-
-        firebaseDatabase = FirebaseDatabase.getInstance();
-        databaseReference = firebaseDatabase.getReference("Tasks").child("Reapir").child("Finished").child("IpFskCxOwvSHC3BUus9SJOL3f3M2");
+        FirebaseUser currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        FirebaseRecyclerOptions<TaskModal> options = new FirebaseRecyclerOptions.Builder<TaskModal>()
-                .setQuery(databaseReference, TaskModal.class)
-                .build();
+        FirebaseRecyclerOptions<TaskModal> options =
+                new FirebaseRecyclerOptions.Builder<TaskModal>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference("Tasks")
+                                .child("Finished").child(currentFirebaseUser.getUid()),TaskModal.class)
+                        .build();
         // Connecting object of required Adapter class to
         // the Adapter class itself
         finishedTaskAdapter = new FinishedTaskAdapter(options);
@@ -77,6 +77,18 @@ public class TechnicianFinishedTasks extends DrawerBase{
         recyclerView.setAdapter(finishedTaskAdapter);
 
 
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        finishedTaskAdapter.startListening();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        finishedTaskAdapter.stopListening();
     }
 
     public void retrieveFinishedTasks(){
