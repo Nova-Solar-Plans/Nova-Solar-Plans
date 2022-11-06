@@ -13,15 +13,22 @@
     <string name="delete">Delete</string>
     <string name="update">Update</string>
     <string name="task_count">Task Count</string>
-    <string name="type"><b>Type</b></string>
-    <string name="description"><b>Description</b></string>
+    <string name="type"><b>Type                : </b></string>
+    <string name="description"><b>Description    : </b></string>
     <string name="date"><b>Date</b></string>
     <string name="task_details"><b>Task Details</b></string>
     <string name="customer_details"><b>Customer Details : </b></string>
-    <string name="name">Name</string>
-    <string name="address">Address</string>
-    <string name="order_no">Order No : </string>
-    <string name="status"><b>Status</b></string>
+    <string name="name"><b>Name      : </b></string>
+    <string name="address"><b>Address  : </b></string>
+    <string name="rating_details"><b>Rating             : </b></string>
+    <string name="rating_description"><b>Description    : </b></string>
+    <string name="your_feedback"><b>Your Feedback : </b></string>
+    <string name="order_no"><b>Order No : </b></string>
+    <string name="status"><b>Status          : </b></string>
     <string name="feedback"><b>Feedback</b></string>
     <string name="mark_as_finished">Mark as Finished</string>
+
+    <string name="card_type"><b>Type              : </b></string>
+    <string name="card_description"><b>Description  : </b></string>
+    <string name="card_date"><b>Date              : </b></string>
 </resources>

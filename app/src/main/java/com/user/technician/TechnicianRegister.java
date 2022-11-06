@@ -110,7 +110,7 @@ public class TechnicianRegister extends AppCompatActivity {
 
 
                 if(isSuccess){
-                    TechnicianModal technicianModal = new TechnicianModal(name, email, address, password, "0");
+                    TechnicianModal technicianModal = new TechnicianModal(name, email, address,nic, password, "0");
 
                     technicianDatabase.technicianAuth(technicianModal).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
