@@ -35,7 +35,7 @@ public class FinishedTaskAdapter extends FirebaseRecyclerAdapter<TaskModal, Fini
 
     @Override
     protected void
-    onBindViewHolder(@NonNull taskViewHolder holder, int position, @NonNull TaskModal model) {
+    onBindViewHolder(@NonNull taskViewHolder holder, @SuppressLint("RecyclerView") int position, @NonNull TaskModal model) {
 
 
         holder.taskType.setText(model.getType());

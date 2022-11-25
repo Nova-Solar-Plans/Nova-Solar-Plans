@@ -28,7 +28,7 @@ public class RemainTaskAdapter extends FirebaseRecyclerAdapter<TaskModal,RemainT
 
 
     @Override
-    protected void onBindViewHolder(@NonNull RemainTaskAdapter.taskViewHolder holder,int position, @NonNull TaskModal model) {
+    protected void onBindViewHolder(@NonNull RemainTaskAdapter.taskViewHolder holder, @SuppressLint("RecyclerView") int position, @NonNull TaskModal model) {
 
         holder.taskType.setText(model.getType());
         holder.taskDescription.setText(model.getDescription());

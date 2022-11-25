@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="com.user.manager.ManagerRegister">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/top_bar_color">
+
+                <ImageView
+                    android:id="@+id/manager_back_login"
+                    android:layout_width="55dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/back_arrow"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manager Register"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    />
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center">
+
+                <EditText
+                    android:id="@+id/manager_register_name"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColorHint="@color/black"
+                    android:backgroundTint="@color/black"
+                    android:hint="Name"/>
+
+                <EditText
+                    android:id="@+id/manager_register_email"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textColorHint="@color/black"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/black"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email"/>
+
+                <EditText
+                    android:id="@+id/manager_register_address"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/black"
+                    android:layout_gravity="center"
+                    android:textColorHint="@color/black"
+                    android:hint="Address"/>
+
+                <EditText
+                    android:id="@+id/manager_register_nic"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textColorHint="@color/black"
+                    android:backgroundTint="@color/black"
+                    android:layout_gravity="center"
+                    android:hint="NIC"/>
+
+                <EditText
+                    android:id="@+id/manager_register_password"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textColorHint="@color/black"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/black"
+                    android:inputType="textPassword"
+                    android:hint="Password"/>
+
+                <EditText
+                    android:id="@+id/manager_register_confirm_password"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textColorHint="@color/black"
+                    android:backgroundTint="@color/black"
+                    android:layout_gravity="center"
+                    android:inputType="textPassword"
+                    android:hint="Confirm password"/>
+
+
+                <Button
+                    android:id="@+id/manager_register_btn"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Register"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/top_bar_color"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white_black"
+                        android:text="Already registered? "/>
+                    <LinearLayout
+                        android:id="@+id/manager_back_login_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:text="@string/login"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

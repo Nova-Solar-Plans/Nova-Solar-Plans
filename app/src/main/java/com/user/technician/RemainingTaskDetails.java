@@ -32,8 +32,9 @@ import java.util.HashMap;
 public class RemainingTaskDetails extends AppCompatActivity {
 
     ImageView RemainTaskBackBtn;
-    private TextView TaskType,TaskDescription,CustomerName,CustomerAddress,CustomerOrderNo,Date,Status;
+    private TextView TaskType,TaskDescription,CustomerName,CustomerAddress,CustomerOrderNo,Date,Status,Contact,Email;
     private Button MarkAsFinishedBtn;
+    private DatabaseReference taskRef;
 
     private DatabaseReference fromPath,toPath;
 
@@ -55,12 +56,58 @@ public class RemainingTaskDetails extends AppCompatActivity {
         Status = findViewById(R.id.task_status);
         MarkAsFinishedBtn = findViewById(R.id.mark_as_finished_btn);
         RemainTaskBackBtn = findViewById(R.id.remain_task_back_btn);
+        Contact = findViewById(R.id.customer_contact);
+        Email = findViewById(R.id.customer_email);
 
         Bundle extra = getIntent().getExtras();
         key = extra.getString("taskNo");
 
         HashMap<String,Object> hashMap = new HashMap<>();
         hashMap.put("status","Finished");
+
+        FirebaseUser currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+
+        taskRef = FirebaseDatabase.getInstance().getReference("Tasks").child("Remain").child(currentFirebaseUser.getUid()).child(key);
+
+        taskRef.get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<DataSnapshot> task) {
+
+                if(task.isSuccessful()){
+                    if(task.getResult().exists()){
+                        DataSnapshot dataSnapshot = task.getResult();
+                        String customerAddress = String.valueOf(dataSnapshot.child("customerAddress").getValue());
+                        String customerContact = String.valueOf(dataSnapshot.child("customerContact").getValue());
+                        String customerEmail = String.valueOf(dataSnapshot.child("customerEmail").getValue());
+                        String customerName = String.valueOf(dataSnapshot.child("customerName").getValue());
+                        String customerOrderNo = String.valueOf(dataSnapshot.child("customerOrderNo").getValue());
+                        String date = String.valueOf(dataSnapshot.child("date").getValue());
+                        String description = String.valueOf(dataSnapshot.child("description").getValue());
+                        String type = String.valueOf(dataSnapshot.child("type").getValue());
+
+
+                        TaskType.setText(type);
+                        TaskDescription.setText(description);
+                        CustomerAddress.setText(customerAddress);
+                        CustomerName.setText(customerName);
+                        CustomerOrderNo.setText(customerOrderNo);
+                        Date.setText(date);
+                        Status.setText("Not Finished");
+                        Contact.setText(customerContact);
+                        Email.setText(customerEmail);
+
+
+
+
+                    }else{
+                        Toast.makeText(RemainingTaskDetails.this,"Error fetch data result",Toast.LENGTH_SHORT).show();
+                    }
+                }else{
+                    Toast.makeText(RemainingTaskDetails.this,"Error fetch data unsuccessful",Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        });
 
         MarkAsFinishedBtn.setOnClickListener(new View.OnClickListener() {
             @Override

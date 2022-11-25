@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Patterns;
@@ -13,6 +14,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -21,6 +23,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.user.main.R;
+import com.user.main.UserNavigation;
 import com.user.technician.database.TechnicianDatabase;
 import com.user.technician.modal.TechnicianModal;
 
@@ -29,6 +32,7 @@ public class TechnicianLogin extends AppCompatActivity {
     private Button LoginBtn;
     private LinearLayout RegisterBtn;
     private EditText Email,Password;
+    private ImageView BackBtn;
 
     FirebaseAuth mAuth;
 
@@ -45,6 +49,15 @@ public class TechnicianLogin extends AppCompatActivity {
         RegisterBtn = findViewById(R.id.register_layout);
         Email = findViewById(R.id.login_email);
         Password = findViewById(R.id.login_password);
+        BackBtn = findViewById(R.id.nav_back);
+
+        BackBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(TechnicianLogin.this, UserNavigation.class);
+                startActivity(intent);
+            }
+        });
 
         LoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override

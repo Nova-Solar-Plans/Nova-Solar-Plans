@@ -10,11 +10,11 @@
     <string name="menu_drawer_close">Drawer Close</string>
     <string name="edit"><u>Edit</u></string>
     <string name="rating"><u>Rating</u></string>
-    <string name="delete">Delete</string>
+    <string name="delete"><u>Delete Account</u></string>
     <string name="update">Update</string>
     <string name="task_count">Task Count</string>
-    <string name="type"><b>Type                : </b></string>
-    <string name="description"><b>Description    : </b></string>
+    <string name="type"><b>Type</b></string>
+    <string name="description"><b>Description</b></string>
     <string name="date"><b>Date</b></string>
     <string name="task_details"><b>Task Details</b></string>
     <string name="customer_details"><b>Customer Details : </b></string>
@@ -27,8 +27,12 @@
     <string name="status"><b>Status          : </b></string>
     <string name="feedback"><b>Feedback</b></string>
     <string name="mark_as_finished">Mark as Finished</string>
-
     <string name="card_type"><b>Type              : </b></string>
     <string name="card_description"><b>Description  : </b></string>
     <string name="card_date"><b>Date              : </b></string>
+    <string name="title"><u>Title</u></string>
+    <string name="product_description"><u>Description</u></string>
+    <string name="price"><u>Price</u></string>
+    <string name="highlight"><u>Highlight</u></string>
+    <string name="delete_product"><u>Delete Product</u></string>
 </resources>

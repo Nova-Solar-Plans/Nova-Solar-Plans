@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/bg"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.user.technician.FinishedTaskDetails">
@@ -65,7 +66,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/type"
+                            android:text="Type                     : "
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/abril_fatface"
                             android:layout_marginLeft="10dp"
                             android:textSize="18sp"/>
 
@@ -87,7 +90,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/description"
+                            android:text="Description   : "
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/abril_fatface"
                             android:layout_marginLeft="10dp"
                             android:textSize="18sp"/>
 
@@ -104,6 +109,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/customer_details"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/abril_fatface"
                         android:textSize="20sp"
                         android:layout_marginTop="20dp"
                         android:layout_marginLeft="10dp"/>
@@ -125,8 +132,9 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/name"
+                                android:text="Name            : "
                                 android:textColor="@color/black"
+                                android:fontFamily="@font/abril_fatface"
                                 android:textSize="15sp" />
 
                             <TextView
@@ -146,8 +154,9 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/address"
+                                android:text="Address      : "
                                 android:textColor="@color/black"
+                                android:fontFamily="@font/abril_fatface"
                                 android:textSize="15sp" />
 
                             <TextView
@@ -167,8 +176,9 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/order_no"
+                                android:text="Order No   : "
                                 android:textColor="@color/black"
+                                android:fontFamily="@font/abril_fatface"
                                 android:textSize="15sp" />
 
                             <TextView
@@ -190,7 +200,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/date"
+                            android:text="Date              : "
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/abril_fatface"
                             android:layout_marginLeft="10dp"
                             android:textSize="18sp"/>
 
@@ -198,9 +210,8 @@
                             android:id="@+id/date"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="54dp"
                             android:inputType="date"
-                            android:hint=" : 22/10/2022"
+                            android:hint="22/10/2022"
                             android:textSize="18sp"/>
 
                     </LinearLayout>
@@ -214,7 +225,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/status"
+                            android:text="Status         : "
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/abril_fatface"
                             android:layout_marginLeft="10dp"
                             android:textSize="18sp"/>
 
@@ -238,6 +251,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/feedback"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/abril_fatface"
                             android:layout_marginLeft="10dp"
                             android:textSize="18sp"/>
 
@@ -259,9 +274,10 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/rating_details"
+                                android:text="Rating                 : "
                                 android:textSize="15sp"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/abril_fatface"/>
                             <TextView
                                 android:id="@+id/rating"
                                 android:layout_width="wrap_content"
@@ -280,9 +296,10 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/rating_description"
+                                android:text="Description    : "
                                 android:textSize="15sp"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/abril_fatface"/>
                             <TextView
                                 android:id="@+id/rating_description"
                                 android:layout_width="wrap_content"
@@ -305,9 +322,10 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/your_feedback"
+                                android:text="Your  Feedback : "
                                 android:textSize="15sp"
-                                android:textColor="@color/black"/>
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/abril_fatface"/>
                             <TextView
                                 android:id="@+id/technician_feedback_view"
                                 android:layout_width="wrap_content"

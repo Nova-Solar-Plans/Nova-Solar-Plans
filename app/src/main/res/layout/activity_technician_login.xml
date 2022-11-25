@@ -4,28 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/bg"
     android:orientation="vertical"
     tools:context="com.user.technician.TechnicianLogin">
 
-    <LinearLayout
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="vertical"
-        android:backgroundTint="@color/top_bar_color"
-        android:background="@drawable/top_title_corner"
-        >
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/top_bar_color">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Technician Login"
-        android:textSize="25sp"
-        android:fontFamily="sans-serif"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        />
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/nav_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_arrow"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Technician Login"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
 
 
 
@@ -39,11 +53,16 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="170dp"
-            android:src="@drawable/nova_logo"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/abril_fatface"
+                android:text="Nova Solar Plans"
+                android:textSize="28sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"/>
 
         <LinearLayout
             android:layout_width="350dp"
@@ -64,23 +83,29 @@
                     android:id="@+id/login_email"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="@color/black"
+                    android:textColor="@color/black"
                     android:hint="Email"/>
                 <EditText
                     android:id="@+id/login_password"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black"
                     android:hint="Password"/>
 
                 <Button
                     android:id="@+id/login_btn"
-                    android:layout_width="150dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Login"
                     android:textColor="@color/black"
                     android:layout_gravity="center"
                     android:layout_marginTop="30dp"
-                    android:backgroundTint="@color/top_bar_color"/>
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/button_color"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -92,6 +117,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/white_black"
                         android:text="Not a member yet?"/>
                     <LinearLayout
                         android:id="@+id/register_layout"
@@ -103,6 +129,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
                             android:textStyle="bold"
+                            android:textColor="@color/black"
                             android:text="@string/register"/>
                     </LinearLayout>
 

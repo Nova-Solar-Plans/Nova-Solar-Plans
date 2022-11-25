@@ -3,16 +3,67 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/drawable/back_arrow.xml" value="0.192" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/drawable/dashboard.xml" value="0.192" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/drawable/profile.xml" value="0.192" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/drawable/rounded_corner.xml" value="0.192" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_dash_board.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_drawer_base.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_finished_task_details.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_manager_dashboard.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_manager_login.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_manager_register.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_product_view.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_remaining_task_details.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_request_quote.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_technician_finished_tasks.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_technician_login.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_technician_profile.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_technician_register.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_technician_remain_tasks.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_user_navigation.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_view_technician.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_visitor_dashboard.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_visitor_product.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_visitor_technician.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_visitor_view_product.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/customer_request_list.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/drawer_content_layout.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/drawer_header.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/product_list.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/task_list.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/technician_list.xml" value="0.20521590423257802" />
+        <entry key="..\:/Degree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/menu/drawer_menu.xml" value="0.20521590423257802" />
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/drawable/ic_launcher_background.xml" value="0.192" />
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/drawable/login_rounded_corner.xml" value="0.192" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/drawable/profile.xml" value="0.192" />
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/drawable/profile_image_round_corner.xml" value="0.192" />
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/drawable/rounded_corner.xml" value="0.2135" />
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/drawable/top_title_corner.xml" value="0.192" />
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/drawable/user_navigation.xml" value="0.192" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_add_product.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_customer_create_request.xml" value="0.20521590423257802" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_customer_dashboard.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_customer_drawer_base.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_customer_login.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_customer_products.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_customer_profile.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_customer_register.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_customer_requests.xml" value="0.2359375" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_customer_view_product.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_customer_view_technician.xml" value="0.1936725096194955" />
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_dash_board.xml" value="0.25" />
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_drawer_base.xml" value="0.25" />
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_finished_task_details.xml" value="0.25" />
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_manage_customer_request.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_manage_product.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_manager_dashboard.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_manager_drawer_base.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_manager_login.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_manager_profile.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_manager_register.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_product_view.xml" value="0.25" />
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_remaining_task_details.xml" value="0.25" />
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_request_quote.xml" value="0.25" />
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_technician_finished_tasks.xml" value="0.2359375" />
@@ -21,12 +72,27 @@
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_technician_register.xml" value="0.25" />
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_technician_remain_tasks.xml" value="0.25" />
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_user_navigation.xml" value="0.2" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_view_customer_task.xml" value="0.20521590423257802" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_view_technician.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_visitoer_view_product.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_visitor_dashboard.xml" value="0.25" />
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_visitor_login.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_visitor_product.xml" value="0.25" />
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_visitor_product_details.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_visitor_products.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_visitor_shop.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_visitor_technician.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_visitor_view_product.xml" value="0.264" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/activity_your_requests.xml" value="0.20521590423257802" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/customer_request_list.xml" value="0.25" />
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/drawer_content_layout.xml" value="0.25" />
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/drawer_header.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/product_list.xml" value="0.25" />
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/task_list.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/layout/technician_list.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/menu/customer_drawer_menu.xml" value="0.25" />
         <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/menu/drawer_menu.xml" value="0.25" />
+        <entry key="..\:/Digree/3rd Yr 1st Sem/UEE/Nova-Solar-Plans.git/app/src/main/res/menu/manager_drawer_menu.xml" value="0.25" />
         <entry key="..\:/Nova-Solar-Plans.git/app/src/main/res/layout/activity_dash_board.xml" value="0.25" />
         <entry key="..\:/Nova-Solar-Plans.git/app/src/main/res/layout/activity_finished_task_details.xml" value="0.25" />
         <entry key="..\:/Nova-Solar-Plans.git/app/src/main/res/layout/activity_remaining_task_details.xml" value="0.25" />
