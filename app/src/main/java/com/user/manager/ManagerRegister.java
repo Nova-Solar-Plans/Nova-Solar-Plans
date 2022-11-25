@@ -160,6 +160,9 @@ public class ManagerRegister extends AppCompatActivity {
                     });
 
                 }
+                else{
+                    progressDialog.dismiss();
+                }
             }
         });
     }

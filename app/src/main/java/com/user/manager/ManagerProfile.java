@@ -3,11 +3,14 @@ package com.user.manager;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -20,7 +23,9 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.user.main.R;
 import com.user.main.databinding.ActivityManagerDashboardBinding;
 import com.user.main.databinding.ActivityManagerProfileBinding;
+import com.user.technician.TechnicianLogin;
 import com.user.technician.TechnicianProfile;
+import com.user.technician.database.TechnicianDatabase;
 
 import java.util.HashMap;
 
@@ -29,7 +34,8 @@ public class ManagerProfile extends ManagerDrawerBase {
     ActivityManagerProfileBinding activityManagerProfileBinding;
 
     private EditText Name,Email,Address,NIC;
-    private Button DeleteBtn,UpdateBtn;
+    private Button UpdateBtn;
+    private TextView DeleteBtn;
 
     private DatabaseReference databaseReference;
     @Override
@@ -79,22 +85,50 @@ public class ManagerProfile extends ManagerDrawerBase {
         });
 
         DeleteBtn.setOnClickListener(new View.OnClickListener() {
+
+
+
             @Override
             public void onClick(View view) {
-                FirebaseUser currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser() ;
-                FirebaseDatabase db = FirebaseDatabase.getInstance();
-                databaseReference = db.getReference("Manager");
 
-                databaseReference.child(currentFirebaseUser.getUid()).removeValue()
-                        .addOnCompleteListener(new OnCompleteListener<Void>() {
-                            @Override
-                            public void onComplete(@NonNull Task<Void> task) {
-                                Toast.makeText(ManagerProfile.this,"Deleted",Toast.LENGTH_SHORT).show();
-                                Intent intent =  new Intent(ManagerProfile.this,ManagerLogin.class);
-                                startActivity(intent);
-                                finish();
-                            }
-                        });
+                AlertDialog.Builder builder = new AlertDialog.Builder(ManagerProfile.this);
+
+                builder.setMessage("Do you want to delete account ?");
+
+                // Set Alert Title
+                builder.setTitle("Alert !");
+
+                // Set Cancelable false for when the user clicks on the outside the Dialog Box then it will remain show
+                builder.setCancelable(true);
+
+
+                builder.setPositiveButton("Yes", (DialogInterface.OnClickListener) (dialog, which) -> {
+                    FirebaseUser currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser() ;
+                    FirebaseDatabase db = FirebaseDatabase.getInstance();
+                    databaseReference = db.getReference("Manager");
+
+                    databaseReference.child(currentFirebaseUser.getUid()).removeValue()
+                            .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+                                    Toast.makeText(ManagerProfile.this,"Deleted",Toast.LENGTH_SHORT).show();
+                                    Intent intent =  new Intent(ManagerProfile.this,ManagerLogin.class);
+                                    startActivity(intent);
+                                    finish();
+                                }
+                            });
+                });
+
+                // Set the Negative button with No name Lambda OnClickListener method is use of DialogInterface interface.
+                builder.setNegativeButton("No", (DialogInterface.OnClickListener) (dialog, which) -> {
+                    // If user click no then dialog box is canceled.
+                    dialog.cancel();
+                });
+
+                // Create the Alert dialog
+                AlertDialog alertDialog = builder.create();
+                // Show the Alert Dialog box
+                alertDialog.show();
             }
         });
     }

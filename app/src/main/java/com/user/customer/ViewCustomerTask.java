@@ -3,6 +3,7 @@ package com.user.customer;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -53,10 +54,19 @@ public class ViewCustomerTask extends AppCompatActivity {
         CustomerOrderNo = findViewById(R.id.customer_order_no);
         Date = findViewById(R.id.date);
         Status = findViewById(R.id.task_status);
+        TaskDetailsBackBtn = findViewById(R.id.task_back_btn);
 
         FeedbackInput = findViewById(R.id.rating_description);
         AddFeedbackBtn = findViewById(R.id.add_feedback_btn);
         Spinner = findViewById(R.id.spinner);
+
+        TaskDetailsBackBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ViewCustomerTask.this,YourRequests.class);
+                startActivity(intent);
+            }
+        });
 
         AddFeedbackBtn.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/bg"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <ImageView
         android:id="@+id/main_logo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-460dp"
         android:src="@drawable/nova_logo"/>
-
 
 </LinearLayout>

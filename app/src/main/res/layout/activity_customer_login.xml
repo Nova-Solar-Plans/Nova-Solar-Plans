@@ -32,11 +32,16 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="170dp"
-                android:src="@drawable/nova_logo"
-                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/abril_fatface"
+                android:text="Nova Solar Plans"
+                android:textSize="28sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"/>
 
             <LinearLayout
                 android:layout_width="350dp"
@@ -96,6 +101,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="5dp"
                                 android:textStyle="bold"
+                                android:textColor="@color/black"
                                 android:text="@string/register"/>
                         </LinearLayout>
 

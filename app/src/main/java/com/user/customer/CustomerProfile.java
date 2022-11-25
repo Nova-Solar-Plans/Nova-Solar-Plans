@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -37,7 +38,8 @@ public class CustomerProfile extends CustomerDrawerBase {
     ActivityCustomerProfileBinding activityCustomerProfileBinding;
 
     private EditText Name,Email,Address;
-    private Button Delete,Update;
+    private Button Update;
+    private TextView Delete;
 
     FirebaseStorage storage;
     StorageReference storageReference;

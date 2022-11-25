@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -31,12 +32,14 @@ public class YourRequests extends CustomerDrawerBase implements AdapterView.OnIt
 
     private ImageView CreateReqBtn;
     private RecyclerView recyclerView;
+    private Button Find;
 
     CustomerRequestAdapter customerRequestAdapter;
 
-    String[] filter = { "Finished", "Remain"};
+    String[] filter = { "Remain", "Finished"};
 
     String filterItem = "Remain";
+
 
 
     @Override
@@ -48,6 +51,7 @@ public class YourRequests extends CustomerDrawerBase implements AdapterView.OnIt
 
         CreateReqBtn = findViewById(R.id.create_req_btn);
         recyclerView = findViewById(R.id.request_list);
+        Find = findViewById(R.id.find_btn);
         Spinner spin = (Spinner) findViewById(R.id.spinner);
         spin.setOnItemSelectedListener(this);
 
@@ -66,23 +70,57 @@ public class YourRequests extends CustomerDrawerBase implements AdapterView.OnIt
             }
         });
 
+        Find.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FirebaseRecyclerOptions<CustomerTaskModal> options;
+                if(filterItem.equals("Remain")){
+
+                    Toast.makeText(getApplicationContext(),filterItem , Toast.LENGTH_LONG).show();
+
+                    options = new FirebaseRecyclerOptions.Builder<CustomerTaskModal>()
+                            .setQuery(FirebaseDatabase.getInstance().getReference("Tasks").child("Remain")
+                                    .child("p2wPDGFsQgYneMRiQy6XfdIh7aD3"), CustomerTaskModal.class)
+                            .build();
+                    // Connecting object of required Adapter class to
+                    // the Adapter class itself
+                    // Connecting Adapter class with the Recycler view*/
+                }
+                else{
+
+                    Toast.makeText(getApplicationContext(),filterItem , Toast.LENGTH_LONG).show();
+                    options = new FirebaseRecyclerOptions.Builder<CustomerTaskModal>()
+                            .setQuery(FirebaseDatabase.getInstance().getReference("Tasks").child("Finished")
+                                    .child("1PmYIQTJi4W4DXTzLKKj5FNZThB2"), CustomerTaskModal.class)
+                            .build();
+                    // Connecting object of required Adapter class to
+                    // the Adapter class itself
+                    // Connecting Adapter class with the Recycler view*/
+                }
+            }
+        });
+
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         FirebaseRecyclerOptions<CustomerTaskModal> options;
         if(filterItem.equals("Remain")){
 
+            Toast.makeText(getApplicationContext(),filterItem , Toast.LENGTH_LONG).show();
+
             options = new FirebaseRecyclerOptions.Builder<CustomerTaskModal>()
                     .setQuery(FirebaseDatabase.getInstance().getReference("Tasks").child("Remain")
-                            .child(currentFirebaseUser.getUid()), CustomerTaskModal.class)
+                            .child("p2wPDGFsQgYneMRiQy6XfdIh7aD3"), CustomerTaskModal.class)
                     .build();
             // Connecting object of required Adapter class to
             // the Adapter class itself
             // Connecting Adapter class with the Recycler view*/
         }
         else{
+
+            Toast.makeText(getApplicationContext(),filterItem , Toast.LENGTH_LONG).show();
             options = new FirebaseRecyclerOptions.Builder<CustomerTaskModal>()
                     .setQuery(FirebaseDatabase.getInstance().getReference("Tasks").child("Finished")
-                            .child(currentFirebaseUser.getUid()), CustomerTaskModal.class)
+                            .child("1PmYIQTJi4W4DXTzLKKj5FNZThB2"), CustomerTaskModal.class)
                     .build();
             // Connecting object of required Adapter class to
             // the Adapter class itself
@@ -109,7 +147,7 @@ public class YourRequests extends CustomerDrawerBase implements AdapterView.OnIt
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
 
-        Toast.makeText(getApplicationContext(),filter[i] , Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),filter[i] , Toast.LENGTH_SHORT).show();
         filterItem = filter[i];
     }
 

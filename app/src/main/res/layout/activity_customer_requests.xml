@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     android:orientation="vertical"
     tools:context="com.user.customer.CustomerRequests">
 
@@ -51,12 +52,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Your Name "
+                    android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold"/>
                 <EditText
                     android:id="@+id/customer_name"
                     android:layout_width="300dp"
                     android:layout_marginLeft="5dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black"
                     android:layout_marginTop="10dp"
                     android:layout_height="wrap_content"
                     android:hint="Enter name"
@@ -67,11 +71,14 @@
                     android:layout_height="wrap_content"
                     android:text="Email "
                     android:textSize="18sp"
+                    android:textColor="@color/black"
                     android:textStyle="bold"/>
                 <EditText
                     android:id="@+id/customer_email"
                     android:layout_width="300dp"
                     android:layout_marginLeft="5dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black"
                     android:layout_marginTop="10dp"
                     android:layout_height="wrap_content"
                     android:hint="Enter email"
@@ -80,6 +87,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Contact Number "
+                    android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold"/>
                 <EditText
@@ -87,6 +95,8 @@
                     android:layout_width="300dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black"
                     android:layout_height="wrap_content"
                     android:hint="Enter contact number"
                     />
@@ -97,12 +107,15 @@
                     android:text="Address"
                     android:textSize="18sp"
                     android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
                     android:textStyle="bold"/>
                 <EditText
                     android:id="@+id/customer_address"
                     android:layout_width="300dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black"
                     android:layout_height="wrap_content"
                     android:hint="Enter address"
                     />
@@ -112,6 +125,7 @@
                     android:layout_height="wrap_content"
                     android:text="Roof Height"
                     android:textSize="18sp"
+                    android:textColor="@color/black"
                     android:layout_marginTop="5dp"
                     android:textStyle="bold"/>
                 <EditText
@@ -119,6 +133,8 @@
                     android:layout_width="300dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black"
                     android:layout_height="wrap_content"
                     android:hint="Enter roof height"
                     />
@@ -128,6 +144,7 @@
                     android:layout_height="wrap_content"
                     android:text="Roof Width"
                     android:textSize="18sp"
+                    android:textColor="@color/black"
                     android:layout_marginTop="5dp"
                     android:textStyle="bold"/>
                 <EditText
@@ -136,6 +153,8 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="10dp"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black"
                     android:hint="Enter roof width"/>
 
                 <TextView
@@ -143,12 +162,15 @@
                     android:layout_height="wrap_content"
                     android:text="Roof Material"
                     android:textSize="18sp"
+                    android:textColor="@color/black"
                     android:layout_marginTop="5dp"
                     android:textStyle="bold"/>
                 <EditText
                     android:id="@+id/roof_material"
                     android:layout_width="300dp"
                     android:layout_marginLeft="5dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black"
                     android:layout_marginTop="10dp"
                     android:layout_height="wrap_content"
                     android:hint="Enter roof material"/>
@@ -157,6 +179,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Description"
+                    android:textColor="@color/black"
                     android:textSize="18sp"
                     android:layout_marginTop="5dp"
                     android:textStyle="bold"/>
@@ -165,6 +188,8 @@
                     android:layout_width="300dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black"
                     android:layout_height="wrap_content"
                     android:hint="Description"/>
 

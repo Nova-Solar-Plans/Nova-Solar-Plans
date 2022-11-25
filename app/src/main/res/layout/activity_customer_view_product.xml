@@ -24,6 +24,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="Product View"
             android:textSize="20sp"
             android:layout_marginLeft="50dp"/>
@@ -61,7 +62,7 @@
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginTop="10dp"
-                        android:src="@drawable/nova_logo"
+                        android:src="@drawable/solar"
                         android:layout_gravity="center"/>
 
                     <LinearLayout
@@ -75,6 +76,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/title"
+                            android:textColor="@color/black"
                             android:textStyle="bold"
                             android:textSize="20dp"/>
 
@@ -82,6 +84,7 @@
                             android:id="@+id/product_title"
                             android:layout_width="250dp"
                             android:textSize="20dp"
+                            android:textColor="@color/white_black"
                             android:layout_height="wrap_content"
                             android:hint="3kV Solar Panel"/>
 
@@ -91,12 +94,14 @@
                             android:layout_marginTop="10dp"
                             android:text="@string/product_description"
                             android:textStyle="bold"
+                            android:textColor="@color/black"
                             android:textSize="20dp"/>
 
                         <TextView
                             android:id="@+id/product_description"
                             android:layout_width="250dp"
                             android:textSize="20dp"
+                            android:textColor="@color/white_black"
                             android:layout_height="wrap_content"
                             android:hint="3kV Solar Panel sample description"/>
 
@@ -105,6 +110,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:text="@string/price"
+                            android:textColor="@color/black"
                             android:textStyle="bold"
                             android:textSize="20dp"/>
 
@@ -112,6 +118,7 @@
                             android:id="@+id/product_price"
                             android:layout_width="250dp"
                             android:textSize="20dp"
+                            android:textColor="@color/white_black"
                             android:layout_height="wrap_content"
                             android:hint="300,000.00"/>
 
@@ -120,6 +127,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:text="@string/highlight"
+                            android:textColor="@color/black"
                             android:textStyle="bold"
                             android:textSize="20dp"/>
 
@@ -127,6 +135,7 @@
                             android:id="@+id/product_highlight"
                             android:layout_width="250dp"
                             android:textSize="20dp"
+                            android:textColor="@color/white_black"
                             android:layout_height="wrap_content"
                             android:hint="Reduce bill up to 135,000"/>
 

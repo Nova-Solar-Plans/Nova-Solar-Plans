@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,6 +23,7 @@ public class CustomerViewProduct extends AppCompatActivity {
 
     private TextView Title,Description,Price,Highlight;
     private Button RequestQuote;
+    private ImageView BackBtn;
 
     private DatabaseReference databaseReference;
 
@@ -37,11 +39,19 @@ public class CustomerViewProduct extends AppCompatActivity {
         Price = findViewById(R.id.product_price);
         Highlight = findViewById(R.id.product_highlight);
         RequestQuote = findViewById(R.id.request_quote);
+        BackBtn = findViewById(R.id.product_back_btn);
+
+        BackBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CustomerViewProduct.this,CustomerDashboard.class);
+                startActivity(intent);
+            }
+        });
 
         Bundle bundle = getIntent().getExtras();
         key = bundle.getString("product");
 
-        Toast.makeText(CustomerViewProduct.this,key,Toast.LENGTH_LONG).show();
 
         getProductDetails();
 

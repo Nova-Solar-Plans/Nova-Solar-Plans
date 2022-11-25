@@ -24,6 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hire Technician"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:layout_marginLeft="50dp"/>
     </androidx.appcompat.widget.Toolbar>
@@ -61,6 +62,7 @@
                         android:background="@drawable/profile"
                         android:layout_width="60dp"
                         android:layout_gravity="center"
+                        android:backgroundTint="@color/black"
                         android:layout_marginBottom="10dp"
                         android:layout_height="60dp" />
 
@@ -75,6 +77,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Name "
+                            android:textColor="@color/black"
                             android:textSize="18sp"
                             android:textStyle="bold"/>
                         <TextView
@@ -89,6 +92,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Rating "
+                            android:textColor="@color/black"
                             android:textSize="18sp"
                             android:textStyle="bold"/>
 
@@ -218,12 +222,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Your Name "
+                            android:textColor="@color/black"
                             android:textSize="18sp"
                             android:textStyle="bold"/>
                         <EditText
                             android:id="@+id/customer_name"
                             android:layout_width="250dp"
                             android:layout_marginLeft="5dp"
+                            android:textColor="@color/black"
                             android:layout_marginTop="10dp"
                             android:layout_height="wrap_content"
                             android:hint="Enter name"
@@ -233,12 +239,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Email "
+                            android:textColor="@color/black"
                             android:textSize="18sp"
                             android:textStyle="bold"/>
                         <EditText
                             android:id="@+id/customer_email"
                             android:layout_width="250dp"
                             android:layout_marginLeft="5dp"
+                            android:textColor="@color/black"
                             android:layout_marginTop="10dp"
                             android:layout_height="wrap_content"
                             android:hint="Enter email"
@@ -248,11 +256,13 @@
                             android:layout_height="wrap_content"
                             android:text="Contact Number "
                             android:textSize="18sp"
+                            android:textColor="@color/black"
                             android:textStyle="bold"/>
                         <EditText
                             android:id="@+id/customer_contact"
                             android:layout_width="250dp"
                             android:layout_marginLeft="5dp"
+                            android:textColor="@color/black"
                             android:layout_marginTop="10dp"
                             android:layout_height="wrap_content"
                             android:hint="Enter contact number"
@@ -264,11 +274,13 @@
                             android:text="Address"
                             android:textSize="18sp"
                             android:layout_marginTop="5dp"
+                            android:textColor="@color/black"
                             android:textStyle="bold"/>
                         <EditText
                             android:id="@+id/customer_address"
                             android:layout_width="250dp"
                             android:layout_marginLeft="5dp"
+                            android:textColor="@color/black"
                             android:layout_marginTop="10dp"
                             android:layout_height="wrap_content"
                             android:hint="Enter address"
@@ -279,6 +291,7 @@
                             android:layout_height="wrap_content"
                             android:text="Order No"
                             android:textSize="18sp"
+                            android:textColor="@color/black"
                             android:layout_marginTop="5dp"
                             android:textStyle="bold"/>
                         <EditText
@@ -286,6 +299,7 @@
                             android:layout_width="250dp"
                             android:layout_marginLeft="5dp"
                             android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
                             android:layout_height="wrap_content"
                             android:hint="Enter order number (optional)"
                             />
@@ -295,12 +309,14 @@
                             android:layout_height="wrap_content"
                             android:text="Description"
                             android:textSize="18sp"
+                            android:textColor="@color/black"
                             android:layout_marginTop="5dp"
                             android:textStyle="bold"/>
                         <EditText
                             android:id="@+id/customer_order_description"
                             android:layout_width="250dp"
                             android:layout_marginLeft="5dp"
+                            android:textColor="@color/black"
                             android:layout_marginTop="10dp"
                             android:layout_height="wrap_content"
                             android:hint="Description about issue"/>
@@ -309,6 +325,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Request Type"
+                            android:textColor="@color/black"
                             android:textSize="18sp"
                             android:layout_marginTop="5dp"
                             android:textStyle="bold"/>
@@ -317,6 +334,7 @@
                             android:layout_width="250dp"
                             android:layout_marginLeft="5dp"
                             android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
                             android:layout_height="wrap_content"
                             android:enabled="false"
                             android:text="Repair"/>

@@ -20,7 +20,7 @@ import com.user.manager.modal.ProductModal;
 
 public class AddProduct extends AppCompatActivity {
 
-    private ImageView AddImage;
+    private ImageView AddImage,BackBtn;
     private EditText Title,Description,Price,Highlight;
     private Button Publish;
     private DatabaseReference databaseReference;
@@ -36,6 +36,15 @@ public class AddProduct extends AppCompatActivity {
         Price = findViewById(R.id.product_price);
         Highlight = findViewById(R.id.product_highlight);
         Publish = findViewById(R.id.product_publish_btn);
+        BackBtn = findViewById(R.id.manage_product_back_btn2);
+
+        BackBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AddProduct.this,ManageProduct.class);
+                startActivity(intent);
+            }
+        });
 
 
         Publish.setOnClickListener(new View.OnClickListener() {

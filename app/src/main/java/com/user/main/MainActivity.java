@@ -19,12 +19,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         this.companyLogo = findViewById(R.id.main_logo);
-        this.companyLogo.animate().translationX(1000).setDuration(2000).setStartDelay(2500);
+        this.companyLogo.animate().translationY(1000).setDuration(4000).setStartDelay(5);
 
         Thread thread = new Thread(){
             public void run(){
                 try{
-                    Thread.sleep(4000);
+                    Thread.sleep(4100);
                 }
                 catch (Exception e){
                     e.printStackTrace();

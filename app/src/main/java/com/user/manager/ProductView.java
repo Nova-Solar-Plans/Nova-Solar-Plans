@@ -3,6 +3,8 @@ package com.user.manager;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -16,6 +18,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -26,7 +30,7 @@ import java.util.HashMap;
 
 public class ProductView extends AppCompatActivity {
 
-    private ImageView ProductImage;
+    private ImageView ProductImage,BackBtn;
     private EditText Title,Description,Price,Highlight;
     private Button Update;
     private TextView Delete;
@@ -47,9 +51,20 @@ public class ProductView extends AppCompatActivity {
         Highlight = findViewById(R.id.product_highlight);
         Update = findViewById(R.id.product_update_btn);
         Delete = findViewById(R.id.product_delete_btn);
+        BackBtn = findViewById(R.id.manage_product_back_btn);
 
         Bundle bundle = getIntent().getExtras();
         key = bundle.getString("product");
+
+        BackBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ProductView.this,ManageProduct.class);
+                startActivity(intent);
+            }
+        });
+
+
 
         getProductDetails();
 
@@ -82,21 +97,47 @@ public class ProductView extends AppCompatActivity {
         Delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FirebaseDatabase.getInstance().getReference("Products").child(key).removeValue()
-                        .addOnCompleteListener(new OnCompleteListener<Void>() {
-                            @Override
-                            public void onComplete(@NonNull Task<Void> task) {
 
-                                if(task.isSuccessful()) {
-                                    Toast.makeText(ProductView.this, "Deleted", Toast.LENGTH_SHORT).show();
-                                    Intent intent = new Intent(ProductView.this, ManageProduct.class);
-                                    startActivity(intent);
+                AlertDialog.Builder builder = new AlertDialog.Builder(ProductView.this);
+
+                builder.setMessage("Do you want to delete product ?");
+
+                // Set Alert Title
+                builder.setTitle("Alert !");
+
+                // Set Cancelable false for when the user clicks on the outside the Dialog Box then it will remain show
+                builder.setCancelable(true);
+
+                builder.setPositiveButton("Yes", (DialogInterface.OnClickListener) (dialog, which) -> {
+                    FirebaseDatabase.getInstance().getReference("Products").child(key).removeValue()
+                            .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+
+                                    if(task.isSuccessful()) {
+                                        Toast.makeText(ProductView.this, "Deleted", Toast.LENGTH_SHORT).show();
+                                        Intent intent = new Intent(ProductView.this, ManageProduct.class);
+                                        startActivity(intent);
+                                    }
+                                    else {
+                                        Toast.makeText(ProductView.this, "Fail to delete", Toast.LENGTH_SHORT).show();
+                                    }
                                 }
-                                else {
-                                    Toast.makeText(ProductView.this, "Fail to delete", Toast.LENGTH_SHORT).show();
-                                }
-                            }
-                        });
+                            });
+                });
+
+                // Set the Negative button with No name Lambda OnClickListener method is use of DialogInterface interface.
+                builder.setNegativeButton("No", (DialogInterface.OnClickListener) (dialog, which) -> {
+                    // If user click no then dialog box is canceled.
+                    dialog.cancel();
+                });
+
+                // Create the Alert dialog
+                AlertDialog alertDialog = builder.create();
+                // Show the Alert Dialog box
+                alertDialog.show();
+
+
             }
         });
     }

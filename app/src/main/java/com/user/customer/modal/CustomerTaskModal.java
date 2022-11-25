@@ -9,17 +9,17 @@ public class CustomerTaskModal {
     String customerAddress;
     String customerEmail;
     String customerContact;
-    int customerOrderNo;
+    String customerOrderNo;
     String date;
     String status;
-    int rating;
+    String rating;
     String ratingDescription;
     String technicianFeedback;
 
     public CustomerTaskModal(){}
 
-    public CustomerTaskModal(String type, String description, String customerName, String customerAddress,String customerEmail,String customerContact, int customerOrderNo
-        , String date, String status, int rating, String ratingDescription, String technicianFeedback){
+    public CustomerTaskModal(String type, String description, String customerName, String customerAddress,String customerEmail,String customerContact, String customerOrderNo
+        , String date, String status, String rating, String ratingDescription, String technicianFeedback){
 
         this.type = type;
         this.description = description;
@@ -35,7 +35,7 @@ public class CustomerTaskModal {
         this.customerContact = customerContact;
     }
 
-    public int getRating() {
+    public String getRating() {
         return rating;
     }
 
@@ -63,7 +63,7 @@ public class CustomerTaskModal {
         return customerName;
     }
 
-    public int getCustomerOrderNo() {
+    public String getCustomerOrderNo() {
         return customerOrderNo;
     }
 

@@ -18,8 +18,8 @@
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
         android:layout_gravity="start"
-        android:background="@color/button_color"
         app:headerLayout="@layout/drawer_header"
+        android:background="@color/theme_color"
         app:menu="@menu/drawer_menu"
         tools:ignore="MissingConstraints" />
 
